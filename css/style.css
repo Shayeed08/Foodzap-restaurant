@@ -1,0 +1,797 @@
+/* Overall CSS rules ---------------------- */
+html {
+  scroll-behavior: smooth !important; /*Smooth scrolling to parts of the webpage*/
+}
+
+body {
+  margin: 0;
+  background-color: #fbfefd;
+}
+
+.wrapper-1024px {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+.wrapper-960px {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+/*Header CSS rules -------------------------*/
+#headerAreaFixedWrapper {
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  left: 0;
+  width: 100%;
+  background-color: #fbfefd;
+  z-index: 99;
+}
+
+#headerArea {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 72px;
+  margin-left: 1%;
+  margin-right: 1%;
+}
+
+#logo {
+  height: 72px;
+}
+
+#navArea {
+  min-width: 50%;
+}
+
+#navArea ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#navArea ul li {
+  display: inline;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.6;
+}
+
+#navArea ul li a {
+  text-decoration: none;
+  color: #707070;
+}
+
+#navArea ul li a:hover {
+  color: #069c54;
+}
+
+#navArea ul li a.activeLink {
+  color: #069c54;
+}
+
+#mobileMenuBtn {
+  display: none;
+  border: none;
+  background-color: white;
+}
+
+.fa-bars {
+  font-size: 20px;
+  color: #707070;
+}
+
+#mobileMenuAreaFixedWrapper {
+  position: absolute;
+  top: -1000px;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  background-color: #fbfefd;
+  box-shadow: 0 4px 4px rgb(0 0 0 / 10%);
+  border-radius: 0 0 16px 16px;
+  /*Transitions for mobile menu animations*/
+  transition-property: all;
+  transition-duration: 0.6s;
+  transition-timing-function: ease;
+  transition-delay: 0s;
+}
+
+#mobileNavLinks {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 5%;
+  margin-right: 5%;
+  padding-left: 0;
+}
+
+#mobileNavLinks li {
+  display: inline;
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+#mobileNavLinks li a {
+  text-decoration: none;
+  color: #707070;
+}
+
+#mobileNavLinks li a.activeLink {
+  color: #069c54;
+}
+
+/*Home area CSS rules----------------------*/
+#homeArea {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin: 92px 0;
+}
+
+#homeTextArea {
+  width: 49%;
+  padding: 5%;
+}
+
+#homeText1 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 64px;
+  color: #069c54;
+  font-weight: 600;
+  line-height: 1.6;
+}
+
+#homeText2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 36px;
+  color: #393939;
+  font-weight: 600;
+  line-height: 1.6;
+  margin-bottom: 32px;
+}
+
+#viewMenuBtn {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.6;
+  color: #fff;
+  background-color: #069c54;
+  padding: 12px 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+#viewMenuBtn:hover {
+  background-color: #048654;
+}
+
+#homeImgArea {
+  width: 49%;
+}
+
+#homeImg {
+  width: 100%;
+}
+
+/*About us area css rules--------------------------*/
+#aboutUsArea {
+  padding: 128px 0 32px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#aboutUsImgArea {
+  width: 45%;
+}
+
+#aboutUsTextArea {
+  width: 45%;
+  padding: 4% 0;
+  margin-right: 1%;
+}
+
+#aboutUsImg {
+  width: 90%;
+  margin-left: 10%;
+  border-radius: 8px;
+}
+
+#aboutUsTextHead {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  color: #069c54;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+#aboutUsText1 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 36px;
+  color: #393939;
+  font-weight: 600;
+  margin-bottom: 24px;
+}
+
+#aboutUsText2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  color: #707070;
+  font-weight: 500;
+  margin-bottom: 24px;
+}
+
+.contactUsBtn {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.6;
+  color: #fff;
+  background-color: #069c54;
+  padding: 12px 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.contactUsBtn:hover {
+  background-color: #048654;
+}
+
+/*Services area css rules-----------------*/
+#servicesArea {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 128px 0 32px 0;
+}
+
+#servicesText1 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  color: #069c54;
+  font-weight: 600;
+  margin-bottom: 8px;
+  width: 90%;
+  text-align: center;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+#servicesText2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 36px;
+  color: #393939;
+  font-weight: 600;
+  margin-bottom: 36px;
+  width: 90%;
+  text-align: center;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+#servicesDetailsArea {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+}
+
+.serviceArea {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+#dishImg {
+  width: 76px;
+  height: 72px;
+  margin-bottom: 16px;
+}
+
+#pizzaImg {
+  width: 76px;
+  height: 72px;
+  margin-bottom: 16px;
+}
+
+#truckImg {
+  width: 90px;
+  height: 72px;
+  margin-bottom: 16px;
+}
+
+.serviceHeading {
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  color: #393939;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.serviceText {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  color: #707070;
+  padding: 0 16px;
+  width: 100%;
+}
+
+/*Menu area css rules---------------------------*/
+#menuArea {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 128px 0 32px 0;
+}
+
+#menuText1 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  color: #069c54;
+  font-weight: 600;
+  margin-bottom: 8px;
+  width: 90%;
+  text-align: center;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+#menuText2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 36px;
+  color: #393939;
+  font-weight: 600;
+  margin-bottom: 36px;
+  width: 90%;
+  text-align: center;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+#menuDetailsArea {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.menuDetails {
+  width: 20%;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(3, 74, 40, 0.15);
+}
+
+.menuImg {
+  display: flex;
+  justify-content: center;
+}
+
+#plate1Img,
+#plate2Img,
+#plate3Img {
+  width: 130px;
+  height: 130px;
+  margin-bottom: 16px;
+}
+
+.menuHeading {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  color: #393939;
+  font-weight: 600;
+}
+
+.menuText {
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  color: #707070;
+  margin-bottom: 8px;
+}
+
+.menuPrice {
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  color: #393939;
+  font-weight: 600;
+}
+
+/*Contact us area css rules-----------------------*/
+#contactUsArea {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 128px 0 32px 0;
+  margin: 0 5%;
+}
+
+#contactUsTextArea {
+  width: 60%;
+  padding: 5px;
+}
+
+#contactUsText1 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  color: #069c54;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+#contactUsText2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 36px;
+  color: #393939;
+  font-weight: 600;
+  margin-bottom: 24px;
+}
+
+#contactUsText3 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  color: #707070;
+  margin-bottom: 24px;
+  font-weight: 500;
+}
+
+#contactUsBtnArea {
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*Footer area css rules-------------------*/
+#footerArea {
+  display: flex;
+  flex-direction: column;
+  padding: 128px 0 32px 0;
+}
+
+#footerDetails {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left: 2%;
+  margin-right: 2%;
+  gap: 7%;
+}
+
+#footerSocialLinksArea,
+#footerServiceArea,
+#footerInformationArea,
+#footerAddressArea {
+  width: 18.75%;
+}
+
+#footerLogoTxt1 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  color: #069c54;
+  font-weight: 600;
+  margin-bottom: 4px;
+  cursor: pointer;
+}
+
+#footerLogoTxt2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  color: #707070;
+  margin-bottom: 24px;
+}
+
+.footerSocialLink {
+  font-size: 20px;
+  color: #393939;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+#footerServiceArea,
+#footerInformationArea,
+#footerAddressArea {
+  display: flex;
+  flex-direction: column;
+}
+
+#servivesHeading,
+#informationHeading,
+#addressHeading {
+  font-family: 'Poppins', sans-serif;
+  font-size: 24px;
+  color: #393939;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.service,
+.info {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  color: #707070;
+  margin-bottom: 8px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.service:hover,
+.info:hover {
+  color: #069c54;
+}
+
+.addressLine {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  color: #707070;
+  font-weight: 500;
+}
+
+#footerCopyright {
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  color: #a6a6a6;
+  font-weight: 500;
+  margin-top: 56px;
+  text-align: center;
+}
+
+/*Media queries for less than 860 px-----------------------------*/
+@media only screen and (max-width: 860px) {
+  #navArea {
+    min-width: 55%;
+  }
+}
+
+/*Media queries for less than 786 px------------------------------*/
+@media only screen and (max-width: 768px) {
+  #headerArea {
+    height: 56px;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  #logo {
+    height: 56px;
+  }
+
+  #navArea ul {
+    display: none;
+  }
+
+  #mobileMenuBtn {
+    display: block;
+  }
+
+  #homeArea {
+    margin-top: 76px;
+  }
+
+  #homeText1 {
+    font-size: 36px;
+  }
+
+  #homeText2 {
+    font-size: 24px;
+    margin-bottom: 16px;
+  }
+
+  #aboutUsTextHead {
+    font-size: 15px;
+  }
+
+  #aboutUsText1 {
+    font-size: 24px;
+  }
+
+  #aboutUsText2 {
+    font-size: 15px;
+    font-weight: 300;
+  }
+
+  .contactUsBtn {
+    font-size: 15px;
+  }
+
+  #contactUsText1 {
+    font-size: 15px;
+  }
+
+  #contactUsText2 {
+    font-size: 24px;
+  }
+
+  #contactUsText3 {
+    font-size: 15px;
+  }
+
+  #footerDetails {
+    flex-wrap: wrap;
+    margin-left: 5%;
+    margin-right: 5%;
+    gap: 10%;
+  }
+
+  #footerSocialLinksArea,
+  #footerServiceArea,
+  #footerInformationArea,
+  #footerAddressArea {
+    width: 40%;
+    margin-bottom: 50px;
+  }
+
+  #footerLogoTxt2 {
+    font-size: 12px;
+  }
+
+  .footerSocialLink {
+    font-size: 18px;
+  }
+
+  #servivesHeading,
+  #informationHeading,
+  #addressHeading {
+    font-size: 20px;
+  }
+
+  .service,
+  .info {
+    font-size: 15px;
+  }
+
+  .addressLine {
+    font-size: 15px;
+  }
+
+  #footerCopyright {
+    font-size: 13px;
+    margin-top: 0;
+  }
+}
+
+/*Media queries for less than 600 px-------------------------------*/
+@media only screen and (max-width: 600px) {
+  #homeArea {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 56px 0 10px 0;
+  }
+
+  #homeTextArea {
+    width: 80%;
+    margin: 0 10%;
+    text-align: center;
+  }
+
+  #homeImgArea {
+    width: 80%;
+    max-width: 300px;
+    margin: 0 10%;
+  }
+
+  #aboutUsArea {
+    flex-direction: column;
+    padding: 64px 0 32px 0;
+  }
+
+  #aboutUsImgArea {
+    width: 80%;
+    max-width: 300px;
+    margin: 0 1%;
+    order: 1;
+  }
+
+  #aboutUsImg {
+    width: 100%;
+    margin: 0;
+  }
+
+  #aboutUsTextArea {
+    text-align: center;
+    width: 90%;
+    margin: 0 1%;
+    margin-bottom: 20px;
+  }
+
+  #servicesArea {
+    padding: 64px 0 32px 0;
+  }
+
+  #servicesText2 {
+    font-size: 24px;
+  }
+
+  #servicesDetailsArea {
+    flex-direction: column;
+  }
+
+  .serviceArea {
+    width: 100%;
+  }
+
+  .serviceHeading {
+    font-size: 16px;
+  }
+
+  .serviceText {
+    font-size: 15px;
+    padding: 0 24px;
+    margin-bottom: 36px;
+  }
+
+  #menuArea {
+    padding: 64px 0 32px 0;
+  }
+
+  #menuText2 {
+    font-size: 24px;
+  }
+
+  #menuDetailsArea {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .menuDetails {
+    width: 70%;
+    margin-bottom: 20px;
+  }
+
+  #plate1Img,
+  #plate2Img,
+  #plate3Img {
+    width: 50%;
+    height: auto;
+    min-width: 130px;
+    min-height: 130px;
+  }
+
+  #contactUsArea {
+    flex-direction: column;
+    padding: 64px 0 32px 0;
+  }
+
+  #contactUsTextArea,
+  #contactUsBtnArea {
+    width: 90%;
+    text-align: center;
+  }
+
+  #footerArea {
+    padding: 64px 0 32px 0;
+  }
+
+  #footerDetails {
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    text-align: center;
+  }
+
+  #footerSocialLinksArea,
+  #footerServiceArea,
+  #footerInformationArea,
+  #footerAddressArea {
+    width: 100%;
+  }
+  .fa-twitter {
+    margin-right: 0;
+  }
+}

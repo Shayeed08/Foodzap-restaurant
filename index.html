@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Foodzap restaurant</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <!--Google fonts-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,500;1,600&display=swap" rel="stylesheet">
+
+        <!--Font awesome link-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <!--Our css stylesheet link-->
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+    </head>
+    <body>
+        <!--Header area with navbar-->
+        <div id="headerAreaFixedWrapper">
+            <div class="wrapper-1024px">
+                <div id="headerArea">
+                    <div id="logoArea">
+                        <a href="#"><img src="img/logo.png" id="logo" alt="logo"/></a> 
+                    </div>
+                    <div id="navArea">
+                        <ul id="navLinks">
+                            <li class="navLink"><a href="#" id="homeLink" class="activeLink">Home</a></li>
+                            <li class="navLink"><a href="#aboutUsArea" id="aboutUsLink">About</a></li>
+                            <li class="navLink"><a href="#servicesArea" id="servicesLink">Services</a></li>
+                            <li class="navLink"><a href="#menuArea" id="menuLink">Menu</a></li>
+                            <li class="navLink"><a href="#contactUsArea" id="contactUsLink">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <button type="button" id="mobileMenuBtn"><i class="fa fa-bars"></i></button>
+                </div>
+            </div>
+        </div>
+
+        <!--Mobile navigation area-->
+        <div id="mobileMenuAreaFixedWrapper">
+            <div class="wrapper-960px">
+                <div id="mobileMenuArea">
+                    <ul id="mobileNavLinks">
+                        <li class="mobileNavLink"><a href="#" id="homeLinkMobile" class="activeLink">Home</a></li>
+                        <li class="mobileNavLink"><a href="#aboutUsArea" id="aboutUsLinkMobile">About</a></li>
+                        <li class="mobileNavLink"><a href="#servicesArea" id="servicesLinkMobile">Services</a></li>
+                        <li class="mobileNavLink"><a href="#menuArea" id="menuLinkMobile">Menu</a></li>
+                        <li class="mobileNavLink"><a href="#contactUsArea" id="contactUsLinkMobile">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!--Home area with banner-->
+        <div class="wrapper-960px">
+            <div id="homeArea" class="section">
+                <div id="homeTextArea">
+                    <div id="homeText1">Foodzap</div>
+                    <div id="homeText2">Try the best food of the week.</div>
+                    <a href="#menuArea" id="viewMenuLink"><button type="button" id="viewMenuBtn">View Menu</button></a>
+                </div>
+                <div id="homeImgArea">
+                    <img src="img/homeImg.png" id="homeImg" alt="Salad image">
+                </div>
+            </div>
+        </div>
+
+        <!--About us area-->
+        <div class="wrapper-960px">
+            <div id="aboutUsArea" class="section">
+                <div id="aboutUsImgArea">
+                    <img src="img/about.jpg" id="aboutUsImg" alt="Raw food image">
+                </div>
+                <div id="aboutUsTextArea">
+                    <div id="aboutUsTextHead">About us</div>
+                    <div id="aboutUsText1">We cook the best tasty food</div>
+                    <div id="aboutUsText2">We cook the best food in the entire city, with excellent customer service, the best meals and at the best price, visit us.</div>
+                    <a href="#contactUsArea" id="contactUsLinkBtn"><button type="button" class="contactUsBtn">Contact us</button></a>
+                </div>
+            </div>
+        </div>
+
+        <!--Services area-->
+        <div class="wrapper-960px">
+            <div id="servicesArea" class="section">
+                <div id="servicesText1">Offering</div>
+                <div id="servicesText2">Our amazing services</div>
+                <div id="servicesDetailsArea">
+                    <div class="serviceArea">
+                        <div class="serviceImg"><img src="img/dish.png" id="dishImg" alt="Dish image"></div>
+                        <div class="serviceHeading">Excellent food</div>
+                        <div class="serviceText">We offer our clients excellent quality services for many years, with the best and delicious food in the city.</div>
+                    </div>
+                    <div class="serviceArea">
+                        <div class="serviceImg"><img src="img/pizza.png" id="pizzaImg" alt="Pizza image"></div>
+                        <div class="serviceHeading">Fast food</div>
+                        <div class="serviceText">We offer our clients excellent quality services for many years, with the best and delicious food in the city.</div>
+                    </div>
+                    <div class="serviceArea">
+                        <div class="serviceImg"><img src="img/truck.png" id="truckImg" alt="Truck image"></div>
+                        <div class="serviceHeading">Delivery</div>
+                        <div class="serviceText">We offer our clients excellent quality services for many years, with the best and delicious food in the city.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Menu area-->
+        <div class="wrapper-960px">
+            <div id="menuArea" class="section">
+                <div id="menuText1">Special</div>
+                <div id="menuText2">Menu of the week</div>
+                <div id="menuDetailsArea">
+                    <div class="menuDetails">
+                        <div class="menuImg"><img src="img/plate1.png" id="plate1Img" alt="Dish 1 image"></div>
+                        <div class="menuHeading">Barbecue salad</div>
+                        <div class="menuText">Delicious dish</div>
+                        <div class="menuPrice">Rs. 520</div>
+                    </div>
+                    <div class="menuDetails">
+                        <div class="menuImg"><img src="img/plate2.png" id="plate2Img" alt="Dish 2 image"></div>
+                        <div class="menuHeading">Salad with fish</div>
+                        <div class="menuText">Delicious dish</div>
+                        <div class="menuPrice">Rs. 320</div>
+                    </div>
+                    <div class="menuDetails">
+                        <div class="menuImg"><img src="img/plate3.png" id="plate3Img" alt="Dish 3 image"></div>
+                        <div class="menuHeading">Spinach salad</div>
+                        <div class="menuText">Delicious dish</div>
+                        <div class="menuPrice">Rs. 160</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Contact us area-->
+        <div class="wrapper-960px">
+            <div id="contactUsArea" class="section">
+                <div id="contactUsTextArea">
+                    <div id="contactUsText1">Let's talk</div>
+                    <div id="contactUsText2">Contact us</div>
+                    <div id="contactUsText3">If you want to reserve a table in our restaurant, contact us and we will attend you quickly, with our 24/7 chat service.</div>
+                </div>
+                <div id="contactUsBtnArea">
+                    <a href="#" id="contactUsBtnLink"><button type="button" class="contactUsBtn">Contact us now</button></a>
+                </div>
+            </div>
+        </div>
+
+        <!--Footer area-->
+        <div class="wrapper-960px">
+            <div id="footerArea" class="section">
+                <div id="footerDetails">
+                    <div id="footerSocialLinksArea">
+                        <div id="footerLogoTxt1">Foodzap</div>
+                        <div id="footerLogoTxt2">Restaurant</div>
+                        <div id="socialLinks">
+                            <i class="fa fa-facebook-f footerSocialLink"></i>
+                            <i class="fa fa-instagram footerSocialLink"></i>
+                            <i class="fa fa-twitter footerSocialLink"></i>
+                        </div>
+                    </div>
+                    <div id="footerServiceArea">
+                        <div id="servivesHeading">Services</div>
+                        <div class="service">Delivery</div>
+                        <div class="service">Pricing</div>
+                        <div class="service">Fast food</div>
+                        <div class="service">Reserve your spot</div>
+                    </div>
+                    <div id="footerInformationArea">
+                        <div id="informationHeading">Information</div>
+                        <div class="info">Event</div>
+                        <div class="info">Contact Us</div>
+                        <div class="info">Privacy policy</div>
+                        <div class="info">Terms of services</div>
+                    </div>
+                    <div id="footerAddressArea">
+                        <div id="addressHeading">Address</div>
+                        <div class="addressLine">Street-1, Ekbalpore</div>
+                        <div class="addressLine">Kolkata-700023</div>
+                        <div class="addressLine">1234567890</div>
+                        <div class="addressLine">foodzap@email.com</div>
+                    </div>
+                </div>
+                <div id="footerCopyright">&copy; 2021 Sk Shayeed. All rights reserved.</div>
+            </div>
+        </div>
+
+        <!--ScrollReveal is a JavaScript library for easily animating elements as they enter/leave the viewport.-->
+        <script src="https://unpkg.com/scrollreveal"></script>
+
+        <!--Our javascirpt file-->
+        <script src="js/script.js"></script>
+    </body>
+</html>
